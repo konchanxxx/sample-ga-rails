@@ -91,4 +91,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  GA.tracker = ENV['SAMPLE_GA_RAILS_TRACKING_ID']
 end
